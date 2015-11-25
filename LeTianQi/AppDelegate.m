@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <AMapSearchAPI.h>
+#import "AMapSearchAPI.h"
 #import "RootViewController.h"
 #import "FinderViewController.h"
 #import "MineViewController.h"

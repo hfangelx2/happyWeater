@@ -33,7 +33,7 @@
         self.collection.delegate = self;
         self.collection.dataSource = self;
         self.collection.showsVerticalScrollIndicator = NO;
-        [self.collection addLegendHeaderWithRefreshingTarget:self refreshingAction:@selector(kaishishuaxin)];
+        self.collection.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(kaishishuaxin)];
         [self.contentView addSubview:self.collection];
         [self.collection registerClass:[TwoWeatherCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
         self.dic = [NSMutableDictionary dictionary];

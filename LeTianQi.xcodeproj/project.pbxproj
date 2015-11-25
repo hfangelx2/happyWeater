@@ -190,6 +190,7 @@
 		64E04DC21B26E9C2004A0077 /* FDGraphScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E04DBF1B26E9C2004A0077 /* FDGraphScrollView.m */; };
 		64E04DC31B26E9C2004A0077 /* FDGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E04DC11B26E9C2004A0077 /* FDGraphView.m */; };
 		73C6CED0114C0972F803C248 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21946D88682C9970BAACED2D /* libPods.a */; };
+		CA636E951C060C1200529762 /* AMapSearchKit in Frameworks */ = {isa = PBXBuildFile; fileRef = CA636E8B1C060C1200529762 /* AMapSearchKit */; };
 		CADB9C7B1B723B13001E53FE /* 48c9cad3_df97c副本.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CADB9C7A1B723B13001E53FE /* 48c9cad3_df97c副本.jpg */; };
 /* End PBXBuildFile section */
 
@@ -433,6 +434,15 @@
 		64E04DC01B26E9C2004A0077 /* FDGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDGraphView.h; sourceTree = "<group>"; };
 		64E04DC11B26E9C2004A0077 /* FDGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDGraphView.m; sourceTree = "<group>"; };
 		CA42C2EAC43DBBBE7D2783C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CA636E8B1C060C1200529762 /* AMapSearchKit */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AMapSearchKit; sourceTree = "<group>"; };
+		CA636E8D1C060C1200529762 /* AMapCommonObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapCommonObj.h; sourceTree = "<group>"; };
+		CA636E8E1C060C1200529762 /* AMapNearbySearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapNearbySearchManager.h; sourceTree = "<group>"; };
+		CA636E8F1C060C1200529762 /* AMapNearbyUploadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapNearbyUploadInfo.h; sourceTree = "<group>"; };
+		CA636E901C060C1200529762 /* AMapSearchAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapSearchAPI.h; sourceTree = "<group>"; };
+		CA636E911C060C1200529762 /* AMapSearchError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapSearchError.h; sourceTree = "<group>"; };
+		CA636E921C060C1200529762 /* AMapSearchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapSearchKit.h; sourceTree = "<group>"; };
+		CA636E931C060C1200529762 /* AMapSearchObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapSearchObj.h; sourceTree = "<group>"; };
+		CA636E941C060C1200529762 /* AMapSearchServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapSearchServices.h; sourceTree = "<group>"; };
 		CADB9C7A1B723B13001E53FE /* 48c9cad3_df97c副本.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "48c9cad3_df97c副本.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -442,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6487443C1B33C91C002DC79A /* libUMSocial_Sdk_4.2.3.a in Frameworks */,
+				CA636E951C060C1200529762 /* AMapSearchKit in Frameworks */,
 				6487444C1B33DD31002DC79A /* libUMSocial_Sdk_ScreenShot_1.0.a in Frameworks */,
 				648744501B33DDF9002DC79A /* MediaPlayer.framework in Frameworks */,
 				6487444E1B33DDE0002DC79A /* OpenGLES.framework in Frameworks */,
@@ -548,6 +559,8 @@
 		648483BA1B27C16100C05D0A /* MyTool */ = {
 			isa = PBXGroup;
 			children = (
+				CA636E8B1C060C1200529762 /* AMapSearchKit */,
+				CA636E8C1C060C1200529762 /* Headers */,
 				648744461B33DD31002DC79A /* UMSocial_Sdk_Extra_Frameworks */,
 				648744201B33C91C002DC79A /* UMSocial_Sdk_4.2.3 */,
 				648483BB1B27C16100C05D0A /* QCHttpHandler.h */,
@@ -916,6 +929,21 @@
 			path = FDGraphView;
 			sourceTree = "<group>";
 		};
+		CA636E8C1C060C1200529762 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				CA636E8D1C060C1200529762 /* AMapCommonObj.h */,
+				CA636E8E1C060C1200529762 /* AMapNearbySearchManager.h */,
+				CA636E8F1C060C1200529762 /* AMapNearbyUploadInfo.h */,
+				CA636E901C060C1200529762 /* AMapSearchAPI.h */,
+				CA636E911C060C1200529762 /* AMapSearchError.h */,
+				CA636E921C060C1200529762 /* AMapSearchKit.h */,
+				CA636E931C060C1200529762 /* AMapSearchObj.h */,
+				CA636E941C060C1200529762 /* AMapSearchServices.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		F3CB0F054C7E8661C980B174 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -937,6 +965,7 @@
 				64C611241B258C010090A93E /* Frameworks */,
 				64C611251B258C010090A93E /* Resources */,
 				6C0C10AB8F9ADF550ED60AFB /* Copy Pods Resources */,
+				2F5A242A658C07C6A15BA4A4 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -971,12 +1000,12 @@
 		64C6111F1B258C000090A93E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = LTXZ;
 				TargetAttributes = {
 					64C611261B258C010090A93E = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 5QDHW85Q7A;
+						DevelopmentTeam = N2Z53J8R7M;
 					};
 					64C6113C1B258C010090A93E = {
 						CreatedOnToolsVersion = 6.1;
@@ -1167,6 +1196,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2F5A242A658C07C6A15BA4A4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6C0C10AB8F9ADF550ED60AFB /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1294,6 +1338,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1366,7 +1411,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Tao Yu (5QDHW85Q7A)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/yaotiancheng/Desktop/iOS学习/自己乱七八糟的demo/高德/高德",
@@ -1380,7 +1427,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LeTianQi/UMSocial_Sdk_4.2.3",
 					"$(PROJECT_DIR)/LeTianQi/UMSocial_Sdk_Extra_Frameworks/UMSocial_ScreenShot_Sdk",
+					"$(PROJECT_DIR)/LeTianQi/MyTool",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.happWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1393,8 +1442,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Tao Yu (X43GS73GGP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tao Yu (X43GS73GGP)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/yaotiancheng/Desktop/iOS学习/自己乱七八糟的demo/高德/高德",
@@ -1408,7 +1458,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LeTianQi/UMSocial_Sdk_4.2.3",
 					"$(PROJECT_DIR)/LeTianQi/UMSocial_Sdk_Extra_Frameworks/UMSocial_ScreenShot_Sdk",
+					"$(PROJECT_DIR)/LeTianQi/MyTool",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.happWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1429,6 +1481,7 @@
 				);
 				INFOPLIST_FILE = LeTianQiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LTXZ.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeTianQi.app/LeTianQi";
 			};
@@ -1444,6 +1497,7 @@
 				);
 				INFOPLIST_FILE = LeTianQiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LTXZ.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeTianQi.app/LeTianQi";
 			};

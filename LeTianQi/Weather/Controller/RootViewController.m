@@ -7,7 +7,8 @@
 //
 
 #import "RootViewController.h"
-#import <AMapSearchAPI.h>
+#import "AMapSearchAPI.h"
+#import "AMapSearchServices.h"
 #import "TFHpple.h"
 #import "XMLModel.h"
 #import "XMLModel_city.h"
@@ -431,11 +432,14 @@
 - (void)gaode
 {
     //初始化检索对象
-    _search = [[AMapSearchAPI alloc] initWithSearchKey:@"196233259d24e7cd8e6dbc7d937262f2" Delegate:self];
+    _search = [[AMapSearchAPI alloc] init];
+    AMapSearchServices *amp = [AMapSearchServices sharedServices];
+    amp.apiKey = @"196233259d24e7cd8e6dbc7d937262f2";
+    _search.delegate = self;
     
     //构造AMapReGeocodeSearchRequest对象，location为必选项，radius为可选项
     AMapReGeocodeSearchRequest *regeoRequest = [[AMapReGeocodeSearchRequest alloc] init];
-    regeoRequest.searchType = AMapSearchType_ReGeocode;
+//    regeoRequest.searchType = AMapSearchType_ReGeocode;
     regeoRequest.location = [AMapGeoPoint locationWithLatitude:self.dingwei_1 longitude:self.dingwei_2];
     regeoRequest.radius = 10000;
     regeoRequest.requireExtension = YES;
